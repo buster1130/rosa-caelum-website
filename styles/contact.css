@@ -1,0 +1,146 @@
+.background-picture {
+  object-position: 0 28%;
+}
+
+.section-1 {
+  height: calc(100vh - 100px);
+  padding: 0 10% 0 10%;
+}
+
+.contact-form-container {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+
+@media screen and (max-width: 1500px) {
+  .contact-form-container {
+    gap: 50px;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-evenly;
+  margin-left: 50px;
+}
+
+.contact-left-title {
+  font-size: 3em;
+  color: #be1501;
+}
+
+.contact-inputs {
+  font-family: 'Bebas Neue', 'Noto Sans';
+  font-size: 1em;
+  outline: none;
+  border-radius: 0;
+  border: 4px solid #710002;
+  color: hsla(0, 75%, 2%, 0.69);
+  box-shadow: 0 0 8px #070101c0;
+}
+
+.contact-inputs:focus,
+.contact-inputs:active {
+  border: 4px solid #be1501;
+  color: #070101;
+}
+
+.contact-button {
+  font-family: 'Bebas Neue', 'Noto Sans';
+  font-size: 1.2em;
+  background-color: #710002;
+  transition: background-color 0.15s, color 0.15s;
+  color: #070101;
+  border: none;
+  box-shadow: 0 0 8px #070101c0;
+}
+
+.contact-button:hover {
+  background-color: #be1501;
+  color: #ded6d4;
+}
+
+.contact-button:active {
+  background-color: #be1501a0;
+}
+
+#contact-name,
+#contact-email,
+#mailing-name,
+#mailing-email {
+  padding-top: 2px;
+  
+}
+
+#contact-message {
+  height: 200px;
+}
+
+#contact-result {
+  color: #be1501;
+}
+
+.mailing-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-evenly;
+  margin-right: 50px;
+}
+
+.mailing-title {
+  color: #be1501;
+  font-size: 3em;
+}
+
+.mailing-text {
+  color: #be1501;
+}
+
+#mailing-result {
+  color: #be1501;
+}
+
+.mailing-button {
+  font-family: 'Bebas Neue', 'Noto Sans';
+  background-color: #710002;
+  transition: background-color 0.15s, color 0.15s;
+  color: #070101;
+  border: none;
+  font-size: 1.2em;
+  box-shadow: 0 0 8px #070101c0;
+}
+
+.mailing-button:hover {
+  background-color: #be1501;
+  color: #ded6d4;
+}
+
+.mailing-button:active {
+  background-color: #be1501a0;
+}
+
+@media screen and (max-width: 600px) {
+  .section-1 {
+    height: auto;
+  }
+
+  .contact-form-container {
+    gap: 5px;
+    display: inline;
+  }
+
+  .contact-form {
+    margin: 0;
+  }
+
+  .mailing-form {
+    margin: 0;
+  }
+}

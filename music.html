@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROSA CAELUM</title>
+  <link rel="icon" href="images/rose.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header-footer.css">
+  <link rel="stylesheet" href="styles/music.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/085cc61afb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <img src="images/good-3-edit.png" alt="background_crowd" class="background-picture">
+  <div id="page-cover"></div>
+  <div class="fade"></div>
+  <div class="header">
+    <button class="nav-toggle" id="menu-toggle-button"
+    onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </button>
+    <div class="mobile-nav-container" id="mobile-menu">
+      <a href="index.html" class="mobile-logo-container">
+        <img src="images/logo-red.png" alt="mobile-logo" class="mobile-logo"/>
+      </a>
+      <div class="mobile-socials-container">
+        <a href="https://www.instagram.com/rosacaelum/" target="_blank" class="mobile-social-icon">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://open.spotify.com/artist/1g24vMdo0pCcRhUpHuw9ah?si=1KZO5Lz5Q1erikrDABr23A&dd=1&nd=1&_branch_match_id=1215714914060655291&utm_medium=sharing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXLy7IL8lMq9TLyczL1s%2Fyz%2FEKNogqdK5MAgDR9MrSIAAAAA%3D%3D" target="_blank" class="mobile-social-icon">
+          <i class="fa-brands fa-spotify"></i>
+        </a>
+        <a href="https://www.tiktok.com/@rosacaelum" target="_blank" class="mobile-social-icon">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a href="https://twitter.com/RosaCaelum" target="_blank" class="mobile-social-icon">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://www.youtube.com/watch?v=NpU6e2ugcfg" target="_blank" class="mobile-social-icon">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://www.facebook.com/people/Rosa-Caelum/100076978203931/" target="_blank" class="mobile-social-icon">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div>
+      <a href="about.html" class="mobile-nav-item">ABOUT</a>
+      <a href="music.html" class="mobile-nav-item">MUSIC</a>
+      <a href="https://f1250d.myshopify.com/?_ab=0&_fd=0&_sc=1" class="mobile-nav-item">MERCH</a>
+      <a href="shows.html" class="mobile-nav-item">SHOWS</a>
+      <a href="contact.html" class="mobile-nav-item">CONTACT</a>
+    </div>
+    <div class="nav-container" id="desktop-menu">
+      <a href="about.html" class="nav-item">ABOUT</a>
+      <a href="music.html" class="nav-item">MUSIC</a>
+      <a href="https://f1250d.myshopify.com/?_ab=0&_fd=0&_sc=1" class="nav-item">MERCH</a>
+      <a href="shows.html" class="nav-item">SHOWS</a>
+      <a href="contact.html" class="nav-item">CONTACT</a>
+    </div>
+    <div class="logo-section-container">
+      <a href="index.html" class="link-container">
+        <img src="images/logo-red.png" alt="logo2red" class="logo"/>
+        <img src="images/logo-colour.png" alt="1.1 white" class="logo-fade-out"/>
+      </a>
+    </div>
+    <div class="socials-container">
+      <a href="https://www.instagram.com/rosacaelum/" target="_blank" class="social-icon">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://open.spotify.com/artist/1g24vMdo0pCcRhUpHuw9ah?si=1KZO5Lz5Q1erikrDABr23A&dd=1&nd=1&_branch_match_id=1215714914060655291&utm_medium=sharing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXLy7IL8lMq9TLyczL1s%2Fyz%2FEKNogqdK5MAgDR9MrSIAAAAA%3D%3D" target="_blank" class="social-icon">
+        <i class="fa-brands fa-spotify"></i>
+      </a>
+      <a href="https://www.tiktok.com/@rosacaelum" target="_blank" class="social-icon">
+        <i class="fa-brands fa-tiktok"></i>
+      </a>
+      <a href="https://twitter.com/RosaCaelum" target="_blank" class="social-icon">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="https://www.youtube.com/watch?v=NpU6e2ugcfg" target="_blank" class="social-icon">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+      <a href="https://www.facebook.com/people/Rosa-Caelum/100076978203931/" target="_blank" class="social-icon">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+    </div>
+  </div>
+  <div class="demo-section">
+    <div class="demo-section-title">DEMOS</div>
+    <div class="demo-player-container">
+
+
+      <div class="demo-container" id="demo-container-0">
+        <audio ontimeupdate="whilePlaying(0);" src="demos/fly-high-demo.mp3" preload="metadata" loop></audio>
+        <div class="info-container">
+          <div class="demo-image-element-container"><div class="demo-image-container"><img src="images/sneak-preview.png" alt="demo-image" class="demo-image"></div></div>
+          <div class="title-container"><div class="info-divider"></div><div class="title">FLY HIGH</div><div class="wave">SNEAK PEAK</div></div>
+        </div>
+        <div class="controls-container">
+          <div class="top-controls">
+            <output class="volume-output" id="volume-output-0">100</output>
+            <input type="range" class="volume-slider" id="volume-slider-0" max="100" value="100">
+            <button class="demo-button mute-button" id="mute-icon" onclick="toggleMute(0);">
+              <img src="images/volume-max-icon.png" alt="mute" class="demo-button-icon is-active" id="volume-max-image-0">
+              <img src="images/volume-mid-icon.png" alt="mute" class="demo-button-icon" id="volume-mid-image-0">
+              <img src="images/volume-min-icon.png" alt="mute" class="demo-button-icon" id="volume-min-image-0">
+              <img src="images/mute-icon.png" alt="mute" class="demo-button-icon" id="mute-image-0">
+            </button>
+          </div>
+          <div class="bottom-controls">
+            <span id="current-time" class="time current-time">0:00</span>
+            <input type="range" class="seek-slider" id="seek-slider-0" max="100" value="0">
+            <span id="duration" class="time duration">0:00</span>
+            <button class="demo-button play-button" id="play-button" onclick="togglePausePlay(0);">
+              <img src="images/play-icon.png" alt="play" class="demo-button-icon is-active" id="play-image-0">
+              <img src="images/pause-icon.png" alt="play" class="demo-button-icon" id="pause-image-0">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="section-1">
+    <div class="section-1-title">SINGLES</div>
+    <div class="singles-container">
+      <div class="iframe-container"><iframe width="100%" height="100%" style="border-radius:12px" src="https://open.spotify.com/embed/track/2DILCmItNto8yyltI7u3kE?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <div class="iframe-container"><iframe width="100%" height="100%" style="border-radius:12px" src="https://open.spotify.com/embed/track/7Bat9IGzacpICrrgxsdgi9?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <div class="iframe-container"><iframe width="100%" height="100%" style="border-radius:12px" src="https://open.spotify.com/embed/track/0OvGU4n7mzxykqQIZfOA5u?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="rose-container"><img src="images/rose-darkred.png" alt="rose-darkred" class="rose"/></div>
+    <div class="email-container"><img src="images/email.png" alt="email" class="email"/></div>
+    <div class="copyright-container"><img src="images/copyright.png" alt="&#169 2024, ROSA CAELUM" class="copyright"/></div>
+  </div>
+  <script>
+    const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
+    document.addEventListener('DOMContentLoaded', async function main() {
+      await sleep(10);
+      document.getElementById('page-cover').style.opacity = '0';
+      await sleep(1000);
+      document.getElementById('page-cover').style.zIndex = '-100';
+    }, false);
+
+    function toggleMenu() {
+      console.log('menu toggle')
+      const mobileButton = document.getElementById('menu-toggle-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileButton.classList.toggle('is-active');
+      mobileMenu.classList.toggle('is-active');
+    }
+
+    const demoContainers = document.querySelectorAll('.demo-container');
+    const playButtons = document.querySelectorAll('.demo-button.play-button')
+    const seekSliders = document.querySelectorAll('.seek-slider');
+    const volumeSliders = document.querySelectorAll('.volume-slider');
+    const muteButtons = document.querySelectorAll('.demo-button.mute-button');
+
+    let playStates = Array(demoContainers.length).fill(false);
+    let muteStates = Array(demoContainers.length).fill(false);
+    
+    const audios = document.querySelectorAll('audio');
+    const durationContainers = document.querySelectorAll('.time.duration');
+    const currentTimeContainers = document.querySelectorAll('.time.current-time');
+    const outputContainers = document.querySelectorAll('.volume-output');
+
+    function togglePausePlay(id) {
+      const pause = document.getElementById('pause-image-'+id);
+      const play = document.getElementById('play-image-'+id);
+      const container = document.getElementById('demo-container-'+id);
+      pause.classList.toggle('is-active');
+      play.classList.toggle('is-active');
+      container.classList.toggle('is-active');
+      if (playStates[id] == false) {
+        audios[id].play();
+        playStates[id] = true;
+      } else {
+        audios[id].pause();
+        playStates[id] = false;
+      }
+      for (let i = 0; i < audios.length; i++) {
+        if (i != id && playStates[i] == true) {
+          playStates[i] = false;
+          audios[i].pause();
+          const pause = document.getElementById('pause-image-'+i);
+          const play = document.getElementById('play-image-'+i);
+          const container = document.getElementById('demo-container-'+i);
+          pause.classList.toggle('is-active');
+          play.classList.toggle('is-active');
+          container.classList.toggle('is-active');
+        }
+      }
+    }
+
+    function toggleMute(id) {
+      const mute = document.getElementById('mute-image-'+id);
+      const max = document.getElementById('volume-max-image-'+id);
+      mute.classList.toggle('is-active');
+      max.classList.toggle('is-active');
+      if (muteStates[id] == true) {
+        muteStates[id] = false;
+        audios[id].muted = false;
+      } else {
+        muteStates[id] = true;
+        audios[id].muted = true;
+      }
+    }
+
+    function showRangeProgress(rangeInput, id) {
+      if (rangeInput === seekSliders[id]) demoContainers[id].style.setProperty('--seek-before-widths', rangeInput.value / rangeInput.max * 100 + '%');
+      else demoContainers[id].style.setProperty('--volume-before-width', rangeInput.value / rangeInput.max * 100 + '%');
+    }
+
+    console.log(volumeSliders);
+
+    function calculateTime(secs) {
+      const minutes = Math.floor(secs/60);
+      const seconds = Math.floor(secs%60);
+      const returnedSeconds = seconds <10 ? `0${seconds}` : `${seconds}`;
+      return `${minutes}:${returnedSeconds}`;
+    }
+
+    for (let i = 0; i < demoContainers.length; i++) {
+      seekSliders[i].addEventListener('input', function(e) {
+        showRangeProgress(e.target, i);
+      });
+      volumeSliders[i].addEventListener('input', function(e) {
+        showRangeProgress(e.target, i);
+      });
+    }
+
+    function displayerDuration(id) {
+      durationContainers[id].textContent = calculateTime(audios[id].duration);
+    }
+
+    function setSliderMax(id) {
+      seekSliders[id].max = Math.floor(audios[id].duration);
+      seekSliders[id].value = 0;
+    }
+
+    function whilePlaying(id) {
+      seekSliders[id].value = Math.floor(audios[id].currentTime);
+      currentTimeContainers[id].textContent = calculateTime(seekSliders[id].value);
+      demoContainers[id].style.setProperty('--seek-before-width', `${seekSliders[id].value / seekSliders[id].max * 100}%`);
+    };
+
+    for (let i = 0; i < demoContainers.length; i++) {
+      volumeSliders[i].value = 100;
+      if (audios[i].readyState > 0) {
+        displayerDuration(i);
+        setSliderMax(i);
+      } else {
+        audios[i].addEventListener('loadedmetadata', function() {
+          displayerDuration(i);
+          setSliderMax(i);
+        });
+      }
+
+      seekSliders[i].addEventListener('input', function() {
+        currentTimeContainers[i].textContent = calculateTime(seekSliders[i].value);
+      });
+
+      seekSliders[i].addEventListener('change', function() {
+        audios[i].currentTime = seekSliders[i].value;
+      })
+
+      volumeSliders[i].addEventListener('input', function(e) {
+        const value = e.target.value;
+        outputContainers[i].textContent = value;
+        audios[i].volume = value/100;
+      });
+    }
+  </script>
+</body>

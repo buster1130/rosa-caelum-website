@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROSA CAELUM</title>
+    <link rel="icon" href="images/rose.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header-footer.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/085cc61afb.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="page-cover"></div>
+    <div class="big-picture-container" id="big-picture-container">
+      <button id="close-big-picture-button" onclick="closeBigPicture()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
+      <div class="lhs">
+        <div class="big-picture-image-container">
+          <img src="images/lovers-cover.png" alt="lovers cover" class="big-image" id="big-image-1">
+          <img src="images/jerusalem-cover.png" alt="jerusalem cover" class="big-image" id="big-image-2">
+          <img src="images/heaven-cover.png" alt="heaven cover" class="big-image" id="big-image-3">
+        </div>
+      </div>
+      <div class="rhs">
+        <div id="big-image-title"></div>
+        <div id="big-image-text"></div>
+      </div>
+    </div>
+    <div class="header">
+      <button class="nav-toggle" id="menu-toggle-button"
+      onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
+      <div class="mobile-nav-container" id="mobile-menu">
+        <a href="index.html" class="mobile-logo-container">
+          <img src="images/logo-red.png" alt="mobile-logo" class="mobile-logo"/>
+        </a>
+        <div class="mobile-socials-container">
+          <a href="https://www.instagram.com/rosacaelum/" target="_blank" class="mobile-social-icon">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://open.spotify.com/artist/1g24vMdo0pCcRhUpHuw9ah?si=1KZO5Lz5Q1erikrDABr23A&dd=1&nd=1&_branch_match_id=1215714914060655291&utm_medium=sharing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXLy7IL8lMq9TLyczL1s%2Fyz%2FEKNogqdK5MAgDR9MrSIAAAAA%3D%3D" target="_blank" class="mobile-social-icon">
+            <i class="fa-brands fa-spotify"></i>
+          </a>
+          <a href="https://www.tiktok.com/@rosacaelum" target="_blank" class="mobile-social-icon">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="https://twitter.com/RosaCaelum" target="_blank" class="mobile-social-icon">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://www.youtube.com/watch?v=NpU6e2ugcfg" target="_blank" class="mobile-social-icon">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="https://www.facebook.com/people/Rosa-Caelum/100076978203931/" target="_blank" class="mobile-social-icon">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+        <a href="about.html" class="mobile-nav-item">ABOUT</a>
+        <a href="music.html" class="mobile-nav-item">MUSIC</a>
+        <a href="https://f1250d.myshopify.com/?_ab=0&_fd=0&_sc=1" class="mobile-nav-item">MERCH</a>
+        <a href="shows.html" class="mobile-nav-item">SHOWS</a>
+        <a href="contact.html" class="mobile-nav-item">CONTACT</a>
+      </div>
+      <div class="nav-container" id="desktop-menu">
+        <a href="about.html" class="nav-item">ABOUT</a>
+        <a href="music.html" class="nav-item">MUSIC</a>
+        <a href="https://f1250d.myshopify.com/?_ab=0&_fd=0&_sc=1" class="nav-item">MERCH</a>
+        <a href="shows.html" class="nav-item">SHOWS</a>
+        <a href="contact.html" class="nav-item">CONTACT</a>
+      </div>
+      <div class="logo-section-container">
+        <a href="index.html" class="link-container">
+          <img src="images/logo-red.png" alt="logo2red" class="logo"/>
+          <img src="images/logo-colour.png" alt="1.1 white" class="logo-fade-out"/>
+        </a>
+      </div>
+      <div class="socials-container">
+        <a href="https://www.instagram.com/rosacaelum/" target="_blank" class="social-icon">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://open.spotify.com/artist/1g24vMdo0pCcRhUpHuw9ah?si=1KZO5Lz5Q1erikrDABr23A&dd=1&nd=1&_branch_match_id=1215714914060655291&utm_medium=sharing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXLy7IL8lMq9TLyczL1s%2Fyz%2FEKNogqdK5MAgDR9MrSIAAAAA%3D%3D" target="_blank" class="social-icon">
+          <i class="fa-brands fa-spotify"></i>
+        </a>
+        <a href="https://www.tiktok.com/@rosacaelum" target="_blank" class="social-icon">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a href="https://twitter.com/RosaCaelum" target="_blank" class="social-icon">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://www.youtube.com/watch?v=NpU6e2ugcfg" target="_blank" class="social-icon">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://www.facebook.com/people/Rosa-Caelum/100076978203931/" target="_blank" class="social-icon">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div>
+    </div>
+    <div class="section-1">
+      <img src="images/good-4-edit.png" alt="background_crowd" class="background-picture">
+      <div class="section-1-fade"></div>
+      <div class="top-quote-container">
+        <div class="small-quote-container">
+          <div>
+          <div class="small-quote">
+            "TAKE A <mark>DERANGED</mark> <mark>PSYCHEDELIC</mark> <mark>JOYRIDE</mark> WITH THE MIDLANDS NEXT BIG THING."
+          </div>
+          </div>
+          <div class="small-quote-author">
+            <p class="author-text">GIGSLUTZ</p>
+          </div>
+        </div>
+        <div class="small-quote-container">
+          <div>
+          <div class="small-quote">
+            "WOLVERHAMPTON BAND EMERGE WITH AS <mark>BRUISING</mark> AND <mark>EXPLOSIVE</mark> A DEBUT YOU'LL HEAR THIS YEAR."
+          </div>
+          </div>
+          <div class="small-quote-author">
+            <p class="author-text">THIS FEELING </p>
+          </div>
+        </div>
+        <div class="small-quote-container">
+          <div>
+          <div class="small-quote">
+            "YOU WILL GET SO ADDICTED TO THE <mark>INTOXICATIING</mark> GUITAR RIFFS AND <mark>SEDUCTIVE</mark> LYRICS."
+          </div>
+          </div>
+          <div class="small-quote-author">
+            <p class="author-text">ROCK ERA MAGAZINE</p>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-quote-container">
+        <div class="left-quote-container">
+          <div class="small-quote-container">
+            <div>
+            <div class="small-quote">
+              "'LOVERS' IS A TESTAMENT TO THEIR PROGRESS AND <mark>SURE</mark>-<mark>FIRE</mark> <mark>VISION.</mark>"
+            </div>
+            </div>
+            <div class="small-quote-author">
+              <p class="author-text">EXISTENTIAL MAGAZINE</p>
+            </div>
+          </div>
+          <div class="small-quote-container">
+            <div>
+            <div class="small-quote">
+              "<mark>ROSA</mark><mark>CAELUM'S</mark> RAPID ASCENT IN THE UK INDIE SCENE IS WELL-DESERVED."
+            </div>
+            </div>
+            <div class="small-quote-author">
+              <p class="author-text">THE PENTATONIC</p>
+            </div>
+          </div>
+        </div>
+        <div class="middle-quote-container">
+          <div class="bbc-quote">
+            "SIT UP AND TAKE NOTICE OF <mark class="big-mark">ROSA</mark><mark class="big-mark">CAELUM.</mark>"
+          </div>
+          <div class="bbc-author">
+            <p class="author-text">BBC INTRODUCING</p>
+          </div>
+        </div>
+        <div class="right-quote-container">
+          <div class="small-quote-container">
+            <div>
+            <div class="small-quote">
+              "I HAVE NO DOUBT THESE GUYS WILL BE <mark>FESTIVAL</mark> <mark>REGULARS.</mark>"
+            </div>
+            </div>
+            <div class="small-quote-author">
+              <p class="author-text">YORK CALLING</p>
+            </div>
+          </div>
+          <div class="small-quote-container">
+            <div>
+            <div class="small-quote">
+              "A BAND THAT WILL BE AT THE <mark>FOREFRONT</mark> OF EVERYONE'S MINDS."
+            </div>
+            </div>
+            <div class="small-quote-author">
+              <p class="author-text">THISISTHEMUSIC</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="section-2">
+      <div class="section-2-intro">
+        <div class="top-fade"></div>
+        <div class="fade-above"></div>
+        <img src="images/poster-white.png" alt="background" class="section-2-intro-background">
+        <div class="bottom-fade"></div>
+        <div class="section-2-title">BIRMINGHAM'S FASTEST RISING BAND.</div>
+        <div class="section-2-about-text">
+          <div class="about-text">
+            <p class="red">ROSA CAELUM</p> ARE MAKING WAVES AS THEY CRASH ONTO THE ALT-ROCK SCENE TO TAKE YOU ON A <p class="red">"DERANGED PSYCHADELIC JOYRIDE"</p>.
+          </div>
+          <div class="about-text">
+            FEATURING ON <p class="red">RADIO X</p>, <p class="red">BBC WEST MIDLANDS</p> AND <p class="red">BBC INTRODUCING</p>, THEY HAVE CREATED A NOTERIETY FOR BEING <p class="red">FAST TICKET SELLERS</p> AND A MUST-SEE ACT.
+          </div>
+          <div class="about-text">
+            THEY ARE FOUND PERFORMING AT HEAVING FESTIVALS AND SOLD OUT VENUES INCLUDING TWO <p class="red">BACK-TO-BACK SOLD OUT HEADLINE PERFORMANCES</p>.
+          </div>
+          <div class="about-text">
+            WITH UNPARALLELED ENERGY, THEIR <p class="red">THUNDEROUS</p> AND <p class="red">UNRELENTING</p> LIVE PERFORMANCES ARE EMERCED IN AN INTENSIVE NARRATIVE OF ALL ORIGINAL CONTENT.
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-section">
+        <div class="title" id="title-1">OURMUSICOURMUSICOURMUSIC<p class="black-highlight">OURMUSIC</p>OURMUSICOURMUSICOURMUSICOURMUSICOURMUSICOURMUSICOURMUSICOURMUSICOURMUSICOURMUSICOURMUSICOURMUSIC</div>
+        <div class="text-container">
+          <div class="text">
+            WE DEBUTED IN 2023, RELEASING 3 SINGLES OVER THE YEAR. FEATURING ON <p class="red">RADIO X</p>, <p class="red">BBC WEST MIDLANDS</p> AND <p class="red">BBC INTRODUCING</p>, OUR MUSIC HAS AMASSED  OVER <p class="red">50,000 STREAMS</p> ON SPOTIFY AND APPLE MUSIC.<br><br>
+            WE ARE DRIVEN TO CREATE INTRICATE AND THOUGHT-PROVOKING NARRATIVES. POWERFUL YET ANGELIC LYRICS ARE UNDERPINNED BY THUNDEROUS AND CATCHY GUITAR HOOKS. OUR SOUND IS INSCRIPTED BY OUR HARD HITTING RHYTHM SECTION.
+          </div>
+          <div class="cover-art-container">
+            <div class="cover-container" onclick="openBigPicture(1);"><img src="images/lovers-cover.png" alt="lovers-art" class="cover-art" id="lovers-cover"></div>
+            <div class="cover-container" onclick="openBigPicture(2)"><img src="images/jerusalem-cover.png" alt="jerusalem-art" class="cover-art" id="jerusalem-cover"></div>
+            <div class="cover-container" onclick="openBigPicture(3)"><img src="images/heaven-cover.png" alt="heaven-art" class="cover-art" id="heaven-cover"></div>
+        </div>
+      </div>
+      </div>
+      <div class="text-section">
+        <div class="title" id="title-2">YNOTFESTYNOTFEST<p class="black-highlight">YNOTFEST</p>YNOTFESTYNOTFESTYNOTFESTYNOTFESTYNOTFESTYNOTFESTYNOTFESTYNOTFESTYNOTFESTYNOTFESTYNOTFESTYNOTFESTYNOTFESTYNOTFESTYNOTFESTYNOTFESTYNOTFESTYNOTFEST</div>
+        <div class="text-container">
+          <div class="text">We played the <p class="red">This Feeling's</p> Allotment Stage at <p class="red">YNOT? Festival 2023</p>. The festival boasted headliners <p class="red">Royal Blood</p>, <p class="red">Kasabian</p> and <p class="red">Paul Weller</p>. A huge music event with an audience of <p class="red">40,000</p>.<br><br>
+            DOES THAT MEAN WE SUPPORTED <p class="red">ROYAL BLOOD</p>?<br>PROBABLY NOT...</div>
+        </div>
+      </div>
+      <div class="text-section">
+        <div class="title" id="title-3">MUSICVIDEOSMUSICVIDEOSMUSICVIDEOS<p class="black-highlight">MUSICVIDEOS</p>MUSICVIDEOSMUSICVIDEOSMUSICVIDEOSMUSICVIDEOSMUSICVIDEOSMUSICVIDEOSMUSICVIDEOSMUSICVIDEOS</div>
+          <div class="text-container">
+            <div class="text">FOR OUR LAST SINGLE OF 2023 <p class="red">HEAVEN ONCE TOLD YOU</p> WE PARTNERED WITH <p class="red">THE MANETA CREATIVE</p> TO PRODUCE A DARK, ENIGMATIC STORY TO PAIR WITH OUR SINGLE.<br><br>
+            FILMED AT THE ICONIC <p class="red">BLACK COUNTRY</p> BAR <p class="red">CAFE METRO</p> IN BILSTON, WE ARE PROUD TO EXPAND UPON OUR CREATIVE OUTLETS AND PROVIDE CAPTIVATING MEDIA WITH CARE AND PRECISION.</div>
+            <div class="video-container"><iframe class="video" src="https://www.youtube.com/embed/qAJJc_ENaTE" title="Rosa Caelum - Heaven Once Told You  (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+          </div>
+        </div>
+
+      <div class="text-section">
+        <div class="title" id="title-4">BEHINDTHESCENESBEHINDTHESCENES<p class="black-highlight">BEHINDTHESCENES</p>BEHINDTHESCENESBEHINDTHESCENESBEHINDTHESCENESBEHINDTHESCENESBEHINDTHESCENESBEHINDTHESCENESBEHINDTHESCENESBEHINDTHESCENES</div>
+        <div class="text-container">
+          <div class="text">OUR SHORT FORM CONTENT MAINLY CONSISTS OF BEHIND THE SCENES FOOTAGE FROM OUR LIVE SHOWS. DOCUMENTED BY <p class="red">THE MANETA CREATIVE</p> (AGAIN), WE CREATE SHORT, MOCKUMENTARY STYLE VIDEOS EXPLORING THE FUN PERSONALITIES OF THE BAND. FOR BETTER OR FOR WORSE.<br><br></div>
+          <div class="video-container"><iframe class="video" src="https://www.youtube.com/embed/hFgzQ8n80wM" title="Behind the scenes - BIG IN 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="footer">
+      <div class="rose-container"><img src="images/rose-darkred.png" alt="rose-darkred" class="rose"/></div>
+      <div class="email-container"><img src="images/email.png" alt="email" class="email"/></div>
+      <div class="copyright-container"><img src="images/copyright.png" alt="&#169 2024, ROSA CAELUM" class="copyright"/></div>
+    </div>
+    <script>
+      function toggleMenu() {
+        console.log('menu toggle')
+        const mobileButton = document.getElementById('menu-toggle-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileButton.classList.toggle('is-active');
+        mobileMenu.classList.toggle('is-active');
+      }
+      const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
+      document.addEventListener('DOMContentLoaded', async function main() {
+        await sleep(10);
+        document.getElementById('page-cover').style.opacity = '0';
+        await sleep(1000);
+        document.getElementById('page-cover').style.zIndex = '-100';
+        
+      }, false);
+      
+      function openBigPicture(id) {
+        if (screen.width > 1000) {
+          const bigPictureContainer = document.getElementById('big-picture-container');
+          const bigPicture = document.getElementById('big-image-'+id);
+          const title = document.getElementById('big-image-title');
+          const text = document.getElementById('big-image-text');
+
+          if (id == 1) {
+            title.innerHTML = 'The Lovers Were The Last Ones to Leave';
+            text.innerHTML = 'Our first single';
+          } if (id == 2) {
+            title.innerHTML = 'Jerusalem';
+            text.innerHTML = 'Our second single';
+          } if (id == 3) {
+            title.innerHTML = 'Heaven Once Told You';
+            text.innerHTML = 'Our third single.';
+          }
+
+          bigPictureContainer.classList.toggle('is-active');
+          bigPicture.classList.toggle('is-active');
+        }
+      }
+
+      function closeBigPicture() {
+        const bigPictureContainer = document.getElementById('big-picture-container');
+        const bigPicture = document.getElementsByClassName('big-image is-active')[0];
+        bigPictureContainer.classList.toggle('is-active');
+        bigPicture.classList.toggle('is-active');
+      }
+
+    </script>
+  </body>

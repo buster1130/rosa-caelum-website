@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROSA CAELUM</title>
+  <link rel="icon" href="images/rose.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header-footer.css">
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/085cc61afb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="page-cover"></div>
+  <div class="fade"></div>
+  <div class="header">
+    <button class="nav-toggle" id="menu-toggle-button"
+    onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </button>
+    <div class="mobile-nav-container" id="mobile-menu">
+      <a href="index.html" class="mobile-logo-container">
+        <img src="images/logo-red.png" alt="mobile-logo" class="mobile-logo"/>
+      </a>
+      <div class="mobile-socials-container">
+        <a href="https://www.instagram.com/rosacaelum/" target="_blank" class="mobile-social-icon">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://open.spotify.com/artist/1g24vMdo0pCcRhUpHuw9ah?si=1KZO5Lz5Q1erikrDABr23A&dd=1&nd=1&_branch_match_id=1215714914060655291&utm_medium=sharing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXLy7IL8lMq9TLyczL1s%2Fyz%2FEKNogqdK5MAgDR9MrSIAAAAA%3D%3D" target="_blank" class="mobile-social-icon">
+          <i class="fa-brands fa-spotify"></i>
+        </a>
+        <a href="https://www.tiktok.com/@rosacaelum" target="_blank" class="mobile-social-icon">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a href="https://twitter.com/RosaCaelum" target="_blank" class="mobile-social-icon">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://www.youtube.com/watch?v=NpU6e2ugcfg" target="_blank" class="mobile-social-icon">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://www.facebook.com/people/Rosa-Caelum/100076978203931/" target="_blank" class="mobile-social-icon">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div>
+      <a href="about.html" class="mobile-nav-item">ABOUT</a>
+      <a href="music.html" class="mobile-nav-item">MUSIC</a>
+      <a href="https://f1250d.myshopify.com/?_ab=0&_fd=0&_sc=1" class="mobile-nav-item">MERCH</a>
+      <a href="shows.html" class="mobile-nav-item">SHOWS</a>
+      <a href="contact.html" class="mobile-nav-item">CONTACT</a>
+    </div>
+    <div class="nav-container" id="desktop-menu">
+      <a href="about.html" class="nav-item">ABOUT</a>
+      <a href="music.html" class="nav-item">MUSIC</a>
+      <a href="https://f1250d.myshopify.com/?_ab=0&_fd=0&_sc=1" class="nav-item">MERCH</a>
+      <a href="shows.html" class="nav-item">SHOWS</a>
+      <a href="contact.html" class="nav-item">CONTACT</a>
+    </div>
+    <div class="logo-section-container">
+      <a href="index.html" class="link-container">
+        <img src="images/logo-red.png" alt="logo2red" class="logo"/>
+        <img src="images/logo-colour.png" alt="1.1 white" class="logo-fade-out"/>
+      </a>
+    </div>
+    <div class="socials-container">
+      <a href="https://www.instagram.com/rosacaelum/" target="_blank" class="social-icon">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://open.spotify.com/artist/1g24vMdo0pCcRhUpHuw9ah?si=1KZO5Lz5Q1erikrDABr23A&dd=1&nd=1&_branch_match_id=1215714914060655291&utm_medium=sharing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXLy7IL8lMq9TLyczL1s%2Fyz%2FEKNogqdK5MAgDR9MrSIAAAAA%3D%3D" target="_blank" class="social-icon">
+        <i class="fa-brands fa-spotify"></i>
+      </a>
+      <a href="https://www.tiktok.com/@rosacaelum" target="_blank" class="social-icon">
+        <i class="fa-brands fa-tiktok"></i>
+      </a>
+      <a href="https://twitter.com/RosaCaelum" target="_blank" class="social-icon">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="https://www.youtube.com/watch?v=NpU6e2ugcfg" target="_blank" class="social-icon">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+      <a href="https://www.facebook.com/people/Rosa-Caelum/100076978203931/" target="_blank" class="social-icon">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+    </div>
+  </div>
+  <img src="images/background_crowd.png" alt="background_crowd" id="background-picture" class="background-picture">
+  <img src="images/good-4-edit.png" alt="about-hover" id="background-0" class="hover-background">
+  <img src="images/good-3-edit.png" alt="music-hover" id="background-1" class="hover-background">
+  <img src="images/good-5-edit.png" alt="merch-hover" id="background-2" class="hover-background">
+  <img src="images/good-2-edit.png" alt="shows-hover" id="background-3" class="hover-background">
+  <img src="images/good-1-edit.png" alt="contact-hover" id="background-4" class="hover-background">
+  <img src="images/heaven-lowqual.png" alt="heaven-hover" id="background-5" class="hover-background">
+  <div class="section-1">
+
+    <div class="links-container">
+      <a href="about.html" id="about-link" class="link" 
+        onmouseenter="changePage(0);"
+        onmouseleave="resetPage();">
+        ABOUT
+      </a>
+      <a href="music.html" id="music-link" class="link" 
+        onmouseenter="changePage(1);"
+        onmouseleave="resetPage();">
+        MUSIC
+      </a>
+      <a href="https://f1250d.myshopify.com/?_ab=0&_fd=0&_sc=1" id="merch-link" class="link"
+        onmouseenter="changePage(2);"
+        onmouseleave="resetPage();">
+        MERCH
+      </a>
+      <a href="shows.html" id="shows-link" class="link"
+        onmouseenter="changePage(3);"
+        onmouseleave="resetPage();">
+        SHOWS
+      </a>
+      <a href="contact.html" id="contact-link" class="link"
+        onmouseenter="changePage(4);"
+        onmouseleave="resetPage();">
+        CONTACT
+      </a>
+    </div>
+    <div  class="heaven-link-container">
+      <div class="heaven-link-title">'HEAVEN ONCE TOLD YOU' MUSIC VIDEO OUT NOW</div>
+      <a target="_blank" href="https://www.youtube.com/watch?v=qAJJc_ENaTE" class="heaven-link"
+      onmouseenter="changePage(5);"
+      onmouseleave="resetPage();">
+        CLICK TO WATCH
+      </a>
+    </div>
+  </div>
+  <script>
+    function toggleMenu() {
+      console.log('menu toggle')
+      const mobileButton = document.getElementById('menu-toggle-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileButton.classList.toggle('is-active');
+      mobileMenu.classList.toggle('is-active');
+    }
+
+    const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
+    document.addEventListener('DOMContentLoaded', async function main() {
+      resetPage();
+      await sleep(10);
+      document.getElementById('page-cover').style.opacity = '0';
+      await sleep(1000);
+      document.getElementById('page-cover').style.zIndex = '-100';
+    }, false);
+
+    function changePage(element) {
+      // make current background opace
+      // Make reset background opace
+      document.getElementById('background-picture').style.opacity = '0';
+      for (let i = 0; i<5; i++) {
+        if (i !== element) {
+          document.getElementById('background-'+i).style.opacity = '0';
+        }
+      }
+      if (element === 5) {
+        document.getElementById('background-'+element).style.opacity = '1';
+      } else {
+        document.getElementById('background-'+element).style.opacity = '0.1';
+      }
+    }
+
+    function resetPage() {
+      // Set all background visible
+      // Make heaven background invisible
+      for (let i = 0; i<6; i++) {
+        document.getElementById('background-'+i).style.opacity = '0.0';
+      }
+      document.getElementById('background-picture').style.opacity = '0.1';
+    }
+    
+    const mobileMenu = document.getElementById('mobile-menu');
+    const desktopMenu = document.getElementById('desktop-menu');
+
+    mobileMenu.addEventListener('click', function() {
+      mobileMenu.classList.toggle('is-active')
+    })
+  </script>
+</body>

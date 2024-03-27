@@ -1,0 +1,356 @@
+.background-picture {
+  object-position: 0 30%;
+}
+
+/* PAST SHOWS & BTS VID */
+.section-1 {
+  margin: 0 10% 0 10%;
+  display: grid;
+}
+
+.future-shows-grid-container {
+  width: 100%;
+  margin-right: 10px;
+  text-align: left;
+  position: relative;
+  border-bottom-width: 2px;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+}
+
+.future-shows-grid-title {
+  flex: 2;
+  font-size: 4em;
+  color: #710002;
+  margin: 2px 0 0 25px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: #430009;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  z-index: 5;
+}
+
+.future-shows-grid-item {
+  background-color: #43000920;
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  border: 1px solid #430009;
+  border-right: none;
+  border-left: none;
+  margin: -1px 0 0 -1px;
+  padding: 10px 25px 8px 25px;
+  transition: background-color 0.15s;
+}
+
+.future-shows-grid-item:hover {
+  background-color: #430009a0;
+}
+
+.info {
+  text-align: left;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 10px;
+}
+
+.future-date {
+  color: #ded6d4
+}
+
+.future-venue{
+  color: #be1501;
+}
+
+.future-support {
+  color: #9b91b4;
+}
+
+.future-headline {
+  color: #d172e0;
+}
+
+.future-location {
+  color: #ded6d4;
+}
+
+.ticket-link-container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.ticket-link {
+  width: 70px;
+  height: 50px;
+  background-color: #be150130;
+  transition: background-color 0.15s, color 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2px;
+  box-shadow: 0 0 6px #070101a0;
+}
+
+.ticket-link:hover {
+  background-color: #be1501;
+  color: #ded6d4;
+}
+
+.ticket-link:active {
+  background-color: #be1501a0;
+}
+.mailing-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+}
+
+.mailing-button {
+  font-family: 'Bebas Neue', 'Noto Sans';
+  background-color: #710002a0;
+  transition: background-color 0.15s, color 0.15s;
+  border: none;
+  font-size: 3.5em;
+  padding: 2px 0 0 0;
+  width: 100%;
+  margin: 0 10% 0 10%;
+  text-align: center;
+}
+
+.mailing-button:hover {
+  background-color: #be1501;
+  color: #ded6d4;
+  
+}
+
+.mailing-button:active {
+  background-color: #be1501a0;
+}
+
+
+
+.section-2 {
+  margin: 50px 2% 20px 2%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.past-shows-grid-container {
+  text-align: left;
+  position: relative;
+  background-color: #070101;
+  border: 3px solid #430009;
+  border-bottom-width: 2px;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+  box-shadow: 0 0 8px #070101;
+  width: 700px;
+}
+
+.past-shows-grid-background {
+  position: absolute;
+  object-position: 0 50%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  z-index: -1;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.past-shows-grid-title {
+  flex: 2;
+  font-size: 4em;
+  color: #710002;
+  padding: 2px 0 0 15px;
+  background-color: #070101;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: #430009;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  z-index: 5;
+}
+
+.past-shows-grid-item {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 2fr 5fr 1fr;  
+  border: 1px solid #430009;
+  border-right: none;
+  border-left: none;
+  margin: -1px 0 0 -1px;
+  padding: 5px 5px 3px 5px;
+}
+
+.date {
+  padding: 0 0 0 5px;
+}
+
+.date,
+.venue {
+  color: #ded6d4;
+}
+
+.sold-out {
+  color: #9b91b4;
+}
+
+.sold-out-headline{
+  color: #be1501;
+}
+
+.festival-headline {
+  color: #d172e0;
+}
+
+.festival {
+  color: #5311b9;
+}
+
+.capacity {
+  color: #9b91b4;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-title {
+  font-size: 4em;
+  color: #710002;
+}
+
+.video {
+  border: 3px solid #430009;
+  box-shadow: 0 0 8px #070101;
+}
+
+.mailing-list-section {
+  padding: 20px;
+  background-color: #070101;
+  text-align: center;
+  margin: 80px 30% 250px 30%;
+  color: #be1501;
+  position: relative;
+  z-index: 5;
+  border: 3px solid #be1501;
+}
+
+.mailing-list-background {
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-position: 0 49%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  z-index: -1;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.mailing-list-title-1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.mailing-list-title-2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1500px) {
+
+  .section-2 {
+    margin: 50px 2% 20px 2%;
+  }
+
+  .past-shows-grid-title {
+    font-size: 2.8em;
+  }
+  .past-shows-grid-container {
+    width: 580px;
+    font-size: 0.8em;
+  }
+
+  .video-title {
+    font-size: 2.8em;
+  }
+
+  .video {
+    width: 550px;
+    height: 309px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-1 {
+    margin: 20px 0 0 0;
+  }
+
+  .future-shows-grid-title {
+    font-size: 3.8em;
+    text-align: center;
+    margin-left: 0;
+    color: #be1501;
+    text-align: center;
+  }
+
+  .future-shows-grid-item {
+    padding-left: 10px;
+    padding-right: 10px;
+    
+  }
+
+  .info,
+  .ticket-link {
+    font-size: 0.8em;
+  }
+
+  .mailing-button {
+    font-size: 2em;
+  }
+
+  .section-2 {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .past-shows-grid-container {
+    font-size: 0.7em;
+  }
+
+  .date {
+    margin-right: 5px;
+  }
+
+  .past-shows-grid-title {
+    text-align: center;
+    padding: 0;
+  }
+
+  .video-title {
+    font-size: 1.8em;
+  }
+
+  .video {
+    width: 300px;
+    height: 169px;
+  }
+}

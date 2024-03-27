@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROSA CAELUM</title>
+  <link rel="icon" href="images/rose.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header-footer.css">
+  <link rel="stylesheet" href="styles/shows.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/085cc61afb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <img src="images/good-2-edit.png" alt="background_crowd" class="background-picture">
+  <div id="page-cover"></div>
+  <div class="fade"></div>
+  <div class="header">
+    <button class="nav-toggle" id="menu-toggle-button"
+    onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </button>
+    <div class="mobile-nav-container" id="mobile-menu">
+      <a href="index.html" class="mobile-logo-container">
+        <img src="images/logo-red.png" alt="mobile-logo" class="mobile-logo"/>
+      </a>
+      <div class="mobile-socials-container">
+        <a href="https://www.instagram.com/rosacaelum/" target="_blank" class="mobile-social-icon">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://open.spotify.com/artist/1g24vMdo0pCcRhUpHuw9ah?si=1KZO5Lz5Q1erikrDABr23A&dd=1&nd=1&_branch_match_id=1215714914060655291&utm_medium=sharing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXLy7IL8lMq9TLyczL1s%2Fyz%2FEKNogqdK5MAgDR9MrSIAAAAA%3D%3D" target="_blank" class="mobile-social-icon">
+          <i class="fa-brands fa-spotify"></i>
+        </a>
+        <a href="https://www.tiktok.com/@rosacaelum" target="_blank" class="mobile-social-icon">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a href="https://twitter.com/RosaCaelum" target="_blank" class="mobile-social-icon">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://www.youtube.com/watch?v=NpU6e2ugcfg" target="_blank" class="mobile-social-icon">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://www.facebook.com/people/Rosa-Caelum/100076978203931/" target="_blank" class="mobile-social-icon">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div>
+      <a href="about.html" class="mobile-nav-item">ABOUT</a>
+      <a href="music.html" class="mobile-nav-item">MUSIC</a>
+      <a href="https://f1250d.myshopify.com/?_ab=0&_fd=0&_sc=1" class="mobile-nav-item">MERCH</a>
+      <a href="shows.html" class="mobile-nav-item">SHOWS</a>
+      <a href="contact.html" class="mobile-nav-item">CONTACT</a>
+    </div>
+    <div class="nav-container" id="desktop-menu">
+      <a href="about.html" class="nav-item">ABOUT</a>
+      <a href="music.html" class="nav-item">MUSIC</a>
+      <a href="https://f1250d.myshopify.com/?_ab=0&_fd=0&_sc=1" class="nav-item">MERCH</a>
+      <a href="shows.html" class="nav-item">SHOWS</a>
+      <a href="contact.html" class="nav-item">CONTACT</a>
+    </div>
+    <div class="logo-section-container">
+      <a href="index.html" class="link-container">
+        <img src="images/logo-red.png" alt="logo2red" class="logo"/>
+        <img src="images/logo-colour.png" alt="1.1 white" class="logo-fade-out"/>
+      </a>
+    </div>
+    <div class="socials-container">
+      <a href="https://www.instagram.com/rosacaelum/" target="_blank" class="social-icon">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://open.spotify.com/artist/1g24vMdo0pCcRhUpHuw9ah?si=1KZO5Lz5Q1erikrDABr23A&dd=1&nd=1&_branch_match_id=1215714914060655291&utm_medium=sharing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXLy7IL8lMq9TLyczL1s%2Fyz%2FEKNogqdK5MAgDR9MrSIAAAAA%3D%3D" target="_blank" class="social-icon">
+        <i class="fa-brands fa-spotify"></i>
+      </a>
+      <a href="https://www.tiktok.com/@rosacaelum" target="_blank" class="social-icon">
+        <i class="fa-brands fa-tiktok"></i>
+      </a>
+      <a href="https://twitter.com/RosaCaelum" target="_blank" class="social-icon">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="https://www.youtube.com/watch?v=NpU6e2ugcfg" target="_blank" class="social-icon">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+      <a href="https://www.facebook.com/people/Rosa-Caelum/100076978203931/" target="_blank" class="social-icon">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+    </div>
+  </div>
+  <div class="section-1">
+    <div class="future-shows-grid-container">
+      <div class="future-shows-grid-title">UPCOMING SHOWS</div>
+      <div class="future-shows-grid-item">
+        <div class="info">
+          <div class="future-date">27.04.24 - <mark>SUPPORT TBA.</mark></div>
+          <div class="future-venue">VENUE TBA.</div>
+          <div class="future-location">Glasgow, Scotland.</div>
+        </div>
+        <div class="ticket-link-container">
+          <a href="#" target="_blank" class="ticket-link">TICKETS</a>
+        </div>
+      </div>
+      <div class="future-shows-grid-item">
+        <div class="info">
+          <div class="future-date">17.05.24 - <mark>SUPPORT TBA.</mark></div>
+          <div class="future-venue">The Macbeth @7:00PM.</div>
+          <div class="future-location">London, England.</div>
+        </div>
+        <div class="ticket-link-container">
+          <a href="https://www.skiddle.com/whats-on/London/The-Macbeth/This-Feeling---London/38187180/" target="_blank" class="ticket-link">TICKETS</a>
+        </div>
+      </div>
+      <div class="future-shows-grid-item">
+        <div class="info">
+          <div class="future-date">18.05.24 - <mark>SUPPORT TBA.</mark></div>
+          <div class="future-venue">Sidney & Matilda @7:00PM.</div>
+          <div class="future-location">Sheffield, England.</div>
+        </div>
+        <div class="ticket-link-container">
+          <a href="https://www.skiddle.com/whats-on/Sheffield/Sidney-And-Matilda-/This-Feeling---Sheffield/38187183/" target="_blank" class="ticket-link">TICKETS</a>
+        </div>
+      </div>
+      <div class="future-shows-grid-item">
+        <div class="info">
+          <div class="future-date">24.05.24 - <mark class="red-mark">HEADLINE.</mark></div>
+          <div class="future-venue">VENUE TBA.</div>
+          <div class="future-location">Brighton, England.</div>
+        </div>
+        <div class="ticket-link-container">
+          <a href="https://www.wegottickets.com/event/612520#tickets" target="_blank" class="ticket-link">TICKETS</a>
+        </div>
+      </div>
+      <div class="future-shows-grid-item">
+        <div class="info">
+          <div class="future-date">01.06.24 - <mark>SUPPORT TBA.</mark></div>
+          <div class="future-venue">Off The Square @7:00PM.</div>
+          <div class="future-location">Manchester, England.</div>
+        </div>
+        <div class="ticket-link-container">
+          <a href="https://www.skiddle.com/whats-on/Manchester/Off-The-Square/This-Feeling---Manchester/38187184/" target="_blank" class="ticket-link">TICKETS</a>
+        </div>
+      </div>
+      <div class="future-shows-grid-item">
+        <div class="info">
+          <div class="future-date">08.06.24 - <mark class="red-mark">HEADLINE.</mark></div>
+          <div class="future-venue">0<p class="superscript">2</p> Institute 3 @7:00PM.</div>
+          <div class="future-location">Birmingham, England.</div>
+        </div>
+        <div class="ticket-link-container">
+          <a href="#" target="_blank" class="ticket-link">TICKETS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mailing-button-container"><a href="contact.html" class="mailing-button">SIGN UP TO OUR NEWSLETTER</a></div>
+  <div class="section-2">
+    <div class="past-shows-grid-container">
+      <img src="images/poster-white.png" alt="past-grid-background" class="past-shows-grid-background">
+      <div class="past-shows-grid-title">PAST SHOWS</div>
+      <div class="past-shows-grid-item">
+        <div class="date">19.11.22</div>
+        <div class="sold-out">SOLD OUT.</div>
+        <div class="venue">SUPPORTING 'THE ASSIST'. O<p class="superscript">2</p> INSTITUTE 2, BIRMINGHAM.</div>
+        <div class="capacity">600 CAP.</div>
+      </div>
+      <div class="past-shows-grid-item">
+        <div class="date">14.01.23</div>
+        <div class="sold-out-headline">SOLD OUT HEADLINE.</div>
+        <div class="venue">SUNFLOWER LOUNGE, BIRMINGHAM.</div>
+        <div class="capacity">120 CAP.</div>
+      </div>
+      <div class="past-shows-grid-item">
+        <div class="date">24.02.23</div>
+        <div class="festival">FESTIVAL.</div>
+        <div class="venue">WOLVES RECORD'S LOUDER. MOLINEUX BAR, WOLVERHAMPTON.</div>
+        <div class="capacity"></div>
+      </div>
+      <div class="past-shows-grid-item">
+        <div class="date">03.02.23</div>
+        <div class="sold-out">SOLD OUT.</div>
+        <div class="venue"> SUPPORTING 'HEADSHRINKERS'. KATIE FITZGERALD'S, STOURBRIDGE.</div>
+        <div class="capacity">110 CAP.</div>
+      </div>
+      <div class="past-shows-grid-item">
+        <div class="date">13.04.23</div>
+        <div class="sold-out">SOLD OUT.</div>
+        <div class="venue">SUPPORTING 'ROLLA'. THE RAINBOW, BIRMINGHAM.</div>
+        <div class="capacity">200 CAP.</div>
+      </div>
+      <div class="past-shows-grid-item">
+        <div class="date">06.05.23</div>
+        <div class="festival">FESTIVAL.</div>
+        <div class="venue">INDIE ROCK FEST. NETWORK, SHEFFIELD.</div>
+        <div class="capacity"></div>
+      </div>
+      <div class="past-shows-grid-item">
+        <div class="date">19.05.23</div>
+        <div class="sold-out">SOLD OUT.</div>
+        <div class="venue">SUPPORTING 'SPIRAL CITIES'. THE ACTRESS & BISHOP, BIRMINGHAM.</div>
+        <div class="capacity">100 CAP.</div>
+      </div>
+      <div class="past-shows-grid-item">
+        <div class="date">23.07.23</div>
+        <div class="festival">FESTIVAL.</div>
+        <div class="venue">YNOT? 'THIS FEELING' STAGE. DERBYSHIRE.</div>
+        <div class="capacity"></div>
+      </div>
+      <div class="past-shows-grid-item">
+        <div class="date">09.09.23</div>
+        <div class="sold-out-headline">SOLD OUT HEADLINE.</div>
+        <div class="venue">DEAD WAX, BIRMINGHAM.</div>
+        <div class="capacity">140 CAP.</div>
+      </div>
+      <div class="past-shows-grid-item">
+        <div class="date">23.09.23</div>
+        <div class="festival">FESTIVAL.</div>
+        <div class="venue">KIDDERMINSTER MUSIC FESTIVAL 23, MAIN STAGE. KIDDERMINSTER.</div>
+        <div class="capacity"></div>
+      </div>
+      <div class="past-shows-grid-item">
+        <div class="date">20.10.23</div>
+        <div class="sold-out">SOLD OUT.</div>
+        <div class="venue">SUPPORTING 'THE KAIROS'. SUNFLOWER LOUNGE, BIRMINGHAM.</div>
+        <div class="capacity">120 CAP.</div>
+      </div>
+      <div class="past-shows-grid-item">
+        <div class="date">04.11.23</div>
+        <div class="festival-headline">FESTIVAL HEADLINE.</div>
+        <div class="venue">'COMMUNITY' FESTIVAL. NAC, WOLVERHAMPTON.</div>
+        <div class="capacity"></div>
+      </div>
+      <div class="past-shows-grid-item">
+        <div class="date">30.11.23</div>
+        <div class="sold-out">SOLD OUT.</div>
+        <div class="venue">SUPPORTING 'THE VIEW'. XOYO, BIRMINGHAM.</div>
+        <div class="capacity">1.2K CAP.</div>
+      </div>
+      <div class="past-shows-grid-item">
+        <div class="date">09.02.24</div>
+        <div class="sold-out-headline">SOLD OUT HEADLINE.</div>
+        <div class="venue">'THIS FEELING'S BIG IN 24'. DEAD WAX, BIRMINGHAM.</div>
+        <div class="capacity">140 CAP.</div>
+      </div>
+    </div>
+    <div class="right-section">
+      <div class="video-title">CHECK OUT OUR BEHIND THE SCENES</div>
+      <iframe width="800" height="450" src="https://www.youtube.com/embed/NpU6e2ugcfg" title="Backstage at XOYO - Birmingham" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="rose-container"><img src="images/rose-darkred.png" alt="rose-darkred" class="rose"/></div>
+    <div class="email-container"><img src="images/email.png" alt="email" class="email"/></div>
+    <div class="copyright-container"><img src="images/copyright.png" alt="&#169 2024, ROSA CAELUM" class="copyright"/></div>
+  </div>
+  <script>
+    function toggleMenu() {
+      console.log('menu toggle')
+      const mobileButton = document.getElementById('menu-toggle-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileButton.classList.toggle('is-active');
+      mobileMenu.classList.toggle('is-active');
+    }
+
+    const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
+    document.addEventListener('DOMContentLoaded', async function main() {
+      await sleep(10);
+      document.getElementById('page-cover').style.opacity = '0';
+      await sleep(1000);
+      document.getElementById('page-cover').style.zIndex = '-100';
+      
+    }, false);
+  </script>
+
+
+
+
+</body>
+</html>
