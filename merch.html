@@ -7,14 +7,14 @@
   <link rel="icon" href="images/rose.png" type="image/x-icon">
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/header-footer.css">
-  <link rel="stylesheet" href="styles/contact.css">
+  <link rel="stylesheet" href="styles/merch.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/085cc61afb.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <img src="images/good-1-edit.png" alt="background_crowd" class="background-picture">
+  <img src="images/good-2-edit.png" alt="background_crowd" class="background-picture">
   <div id="page-cover"></div>
   <div class="fade"></div>
   <div class="header">
@@ -88,33 +88,16 @@
       </a>
     </div>
   </div>
+
   <div class="section-1">
-    <div class="contact-form-container">
-      <form method="POST" id="contact-form" class="contact-form">
-        <div class="contact-left-title">GET IN TOUCH</div>
-        <div class="mailing-text">FOR ALL ENQUIERIES, OR TO SAY HELLO, REACH OUT TO US BELOW.</div>
-        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-        <input type="hidden" name="access_key" value="0978d35d-9a89-4897-bab7-f3890aee59ac">
-        <input type="text" name="name" placeholder="YOUR NAME" id="contact-name" class="contact-inputs" required>
-        <input type="email" name="email" placeholder="YOUR EMAIL" id="contact-email" class="contact-inputs" required>
-        <textarea name="message" placeholder="YOUR MESSAGE" id="contact-message" class="contact-inputs" required></textarea>
-        <button type="submit" id="contact-button" class="contact-button">Submit</button>
-        <div id="contact-result"></div>
-      </form>
-      
-      <form method="POST" id="mailing-form" class="mailing-form">
-        <div class="mailing-title">JOIN OUR MAILING LIST</div>
-        <div class="mailing-text">SIGN UP TO BE THE FIRST TO HEAR ABOUT UPCOMING GIGS, MUSIC AND MORE.</div>
-        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-        <input type="hidden" name="access_key" value="0978d35d-9a89-4897-bab7-f3890aee59ac">
-        <input type="text" name="name" placeholder="YOUR NAME" id="mailing-name" class="contact-inputs" required>
-        <input type="hidden" name="subject" value="New Mailing List Request">
-        <input type="email" name="email" placeholder="YOUR EMAIL" id="mailing-email" class="contact-inputs" required>
-        <button type="submit" id="mailing-button" class="mailing-button">Submit</button>
-        <div id="mailing-result"></div>
-      </form>
-    </div>
+    <div class="title">MERCH STORE UNDER CONSTRUCTION</div>
+    <div class="text">OUR ONLINE MERCH STORE IS CURRENTLY UNDER CONSTRUCTION. THANK YOU FOR YOUR PATIENCE.</div>
+    <div class="text">YOU CAN STILL BUY MERCH IN PERSON AT OUR SHOWS.</div>
+
+    <div class="text">JOIN OUR MAILING LIST TO BE NOTIFIED WHEN OUR STORE IS LIVE!</div>
+    <div class="mailing-button-container"><a href="contact.html" class="mailing-button">SIGN UP TO OUR MAILING LIST</a></div>
   </div>
+
   <div class="footer">
     <div class="rose-container"><img src="images/rose-darkred.png" alt="rose-darkred" class="rose"/></div>
     <div class="email-container"><img src="images/email.png" alt="email" class="email"/></div>
@@ -129,9 +112,6 @@
       mobileMenu.classList.toggle('is-active');
     }
 
-    window.onload = function() {
-     document.getElementById("form").reset();
-    };
     const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
     document.addEventListener('DOMContentLoaded', async function main() {
       await sleep(10);
@@ -140,101 +120,10 @@
       document.getElementById('page-cover').style.zIndex = '-100';
       
     }, false);
-
-    function completeContact() {
-      document.getElementById('contact-name').style.display = 'none';
-      document.getElementById('contact-email').style.display = 'none';
-      document.getElementById('contact-message').style.display = 'none';
-      document.getElementById('contact-button').style.display = 'none';
-    }
-
-    function completeMailing() {
-      document.getElementById('mailing-name').style.display = 'none';
-      document.getElementById('mailing-email').style.display = 'none';
-      document.getElementById('mailing-button').style.display = 'none';
-    }
-
-    const contactForm = document.getElementById('contact-form');
-    const contactResult = document.getElementById('contact-result');
-
-    const mailingForm = document.getElementById('mailing-form');
-    const mailingResult = document.getElementById('mailing-result');
-
-    contactForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const formData = new FormData(contactForm);
-      const object = Object.fromEntries(formData);
-      const json = JSON.stringify(object);
-      contactResult.innerHTML = "PLEASE WAIT..."
-
-        fetch('https://api.web3forms.com/submit', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: json
-            })
-            .then(async (response) => {
-                let json = await response.json();
-                if (response.status == 200) {
-                    // SUCCESS
-                    contactResult.innerHTML = json.message;
-                    completeContact()
-                    contactForm.reset();
-
-                } else {
-                    console.log(response);
-                    contactResult.innerHTML = json.message;
-                }
-            })
-            .catch(error => {
-                console.log(error);
-                contactResult.innerHTML = "ERROR. PLEASE TRY AGAIN.";
-                contactForm.reset();
-                setTimeout(() => {
-                    contactResult.style.display = "none";
-                }, 3000);
-            })
-    });
-
-
-    mailingForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const formData = new FormData(mailingForm);
-      const object = Object.fromEntries(formData);
-      const json = JSON.stringify(object);
-      mailingResult.innerHTML = "PLEASE WAIT..."
-
-        fetch('https://api.web3forms.com/submit', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: json
-            })
-            .then(async (response) => {
-                let json = await response.json();
-                if (response.status == 200) {
-                    // SUCCESS
-                    mailingResult.innerHTML = json.message;
-                    completeMailing()
-                    mailingForm.reset();
-
-                } else {
-                    console.log(response);
-                    mailingResult.innerHTML = json.message;
-                }
-            })
-            .catch(error => {
-                console.log(error);
-                mailingResult.innerHTML = "ERROR. PLEASE TRY AGAIN.";
-                mailingForm.reset();
-                setTimeout(() => {
-                  mailingResult.style.display = "none";
-                }, 3000);
-            })
-    });
   </script>
+
+
+
+
 </body>
+</html>

@@ -1,0 +1,80 @@
+.section-1 {
+  height: calc(100vh - 100px);
+}
+
+.title {
+  font-size: 4em;
+  color: #be1501;
+  margin-top: 100px;
+  margin-left: 15%;
+}
+
+.text {
+  font-size: 2em;
+  color: #be1501;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.mailing-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  margin-top: 30px;
+}
+
+.mailing-button {
+  font-family: 'Bebas Neue', 'Noto Sans';
+  background-color: #710002a0;
+  transition: background-color 0.15s, color 0.15s;
+  border: none;
+  font-size: 4em;
+  padding: 2px 0 0 0;
+  width: 100%;
+  margin: 0 15% 0 15%;
+  text-align: center;
+}
+
+.mailing-button:hover {
+  background-color: #be1501;
+  color: #ded6d4;
+  
+}
+
+.mailing-button:active {
+  background-color: #be1501a0;
+}
+
+@media screen and (max-width: 1000px) {
+  
+}
+
+@media screen and (max-width: 600px) {
+
+  .section-1 {
+    margin-bottom: 150px;
+  }
+
+  .title {
+    margin-left: 0;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .text {
+    margin-left: 20px;
+    margin-right: 50px;
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+
+  .mailing-button-container {
+    margin: 20px 0 0 0;
+  }
+
+  .mailing-button {
+    font-size: 3em;
+  }
+  
+}
