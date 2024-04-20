@@ -96,7 +96,7 @@
       <div class="demo-container" id="demo-container-0">
         <audio ontimeupdate="whilePlaying(0);" src="demos/fly-high-demo.mp3" preload="metadata" loop></audio>
         <div class="info-container">
-          <div class="demo-image-element-container"><div class="demo-image-container"><img src="images/sneak-preview.png" alt="demo-image" class="demo-image"></div></div>
+          <div class="demo-image-element-container"><div class="demo-image-container"><img src="images/demo-cover.jpeg" alt="demo-image" class="demo-image"></div></div>
           <div class="title-container"><div class="info-divider"></div><div class="title">FLY HIGH</div><div class="wave">SNEAK PEAK</div></div>
         </div>
         <div class="controls-container">
@@ -117,6 +117,36 @@
             <button class="demo-button play-button" id="play-button" onclick="togglePausePlay(0);">
               <img src="images/play-icon.png" alt="play" class="demo-button-icon is-active" id="play-image-0">
               <img src="images/pause-icon.png" alt="play" class="demo-button-icon" id="pause-image-0">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="demo-container" id="demo-container-1">
+        <audio ontimeupdate="whilePlaying(1);" src="demos/midnight-demo.mp3" preload="metadata" loop></audio>
+        <div class="info-container">
+          <div class="demo-image-element-container"><div class="demo-image-container"><img src="images/demo-cover.jpeg" alt="demo-image" class="demo-image"></div></div>
+          <div class="title-container"><div class="info-divider"></div><div class="title">MIDNIGHT TONIGHT</div><div class="wave">SNEAK PEAK</div></div>
+        </div>
+        <div class="controls-container">
+          <div class="top-controls">
+            <output class="volume-output" id="volume-output-0">100</output>
+            <input type="range" class="volume-slider" id="volume-slider-1" max="100" value="100">
+            <button class="demo-button mute-button" id="mute-icon" onclick="toggleMute(1);">
+              <img src="images/volume-max-icon.png" alt="mute" class="demo-button-icon is-active" id="volume-max-image-1">
+              <img src="images/volume-mid-icon.png" alt="mute" class="demo-button-icon" id="volume-mid-image-1">
+              <img src="images/volume-min-icon.png" alt="mute" class="demo-button-icon" id="volume-min-image-1">
+              <img src="images/mute-icon.png" alt="mute" class="demo-button-icon" id="mute-image-1">
+            </button>
+          </div>
+          <div class="bottom-controls">
+            <span id="current-time" class="time current-time">0:00</span>
+            <input type="range" class="seek-slider" id="seek-slider-0" max="100" value="0">
+            <span id="duration" class="time duration">0:00</span>
+            <button class="demo-button play-button" id="play-button" onclick="togglePausePlay(1);">
+              <img src="images/play-icon.png" alt="play" class="demo-button-icon is-active" id="play-image-1">
+              <img src="images/pause-icon.png" alt="play" class="demo-button-icon" id="pause-image-1">
             </button>
           </div>
         </div>
