@@ -6,17 +6,19 @@
   font-size: 3em;
   padding: 5% 5% 0 5%;
   margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .demo-section-title {
   color: #be1501;
   font-size: 1.33em;
-  padding-left: 55px;
 }
 
 .demo-player-container {
-  display: grid;
-  grid-template-rows: auto;
+  width: 500px;
 }
 
 .demo-container {
@@ -176,7 +178,7 @@ span {
 .section-1-title {
   color: #be1501;
   font-size: 4em;
-  padding: 2px 0 0 55px;
+  text-align: center;
 }
 
 .singles-container {
@@ -254,6 +256,10 @@ span {
 @media screen and (max-width: 600px) {
   span {
     font-size: 0.5em;
+  }
+
+  .demo-player-container {
+    width: 90%;
   }
 
   .controls-container {
