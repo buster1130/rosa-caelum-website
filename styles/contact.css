@@ -33,6 +33,7 @@
 .contact-left-title {
   font-size: 3em;
   color: #be1501;
+  text-align: center;
 }
 
 .contact-inputs {
@@ -97,6 +98,7 @@
 .mailing-title {
   color: #be1501;
   font-size: 3em;
+  text-align: center;
 }
 
 .mailing-text {
@@ -107,7 +109,8 @@
   color: #be1501;
 }
 
-.mailing-button {
+.mailing-button,
+.mailing-button:visited {
   font-family: 'Bebas Neue', 'Noto Sans';
   background-color: #710002;
   transition: background-color 0.15s, color 0.15s;
@@ -115,6 +118,10 @@
   border: none;
   font-size: 1.2em;
   box-shadow: 0 0 8px #070101c0;
+  text-align: center;
+  cursor: default;
+  padding: 20px 0 20px 0;
+  margin-bottom: 30px;
 }
 
 .mailing-button:hover {
